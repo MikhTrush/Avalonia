@@ -7,12 +7,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\packages\Avalonia\Avalonia.csproj" />
     <ProjectReference Include="..\..\Skia\Avalonia.Skia\Avalonia.Skia.csproj" />
+    <ProjectReference Include="..\Avalonia.LinuxFramebuffer\Avalonia.LinuxFramebuffer.csproj" />
     <Compile Include="..\..\Shared\RawEventGrouping.cs" />
   </ItemGroup>
   <Import Project="..\..\..\build\TrimmingEnable.props" />
   <Import Project="..\..\..\build\NullableEnable.props" />
-  
-  <ItemGroup>
-    <InternalsVisibleTo Include="Avalonia.LinuxFramebuffer.Udev, PublicKey=$(AvaloniaPublicKey)" />
-  </ItemGroup>
 </Project>
